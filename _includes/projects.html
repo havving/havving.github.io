@@ -52,6 +52,8 @@
     </ul>
     <p>AI 딥러닝 학습을 통해 콘크리트 구조물의 미세한 균열을 탐지하는 모델을 제안하고 시스템을 개발하였습니다.
        균열 이미지에 대한 이미지 프로세싱을 통해 잡음을 제거하고 길이 측정 기능을 개발하였습니다.
+       균열 탐지를 위해 딥러닝 알고리즘 중 AutoEncoder 학습 시, 균열 폭이 가늘게 있는 경우 학습이 제대로 수행되지 않는 현상에 대해 
+       오차함수 가중치를 부여하여 모델 학습이 가능하도록 개선 방안을 제시했습니다.
         이 기술은 추후 특허 출원 및 논문으로도 작성되었습니다.</p>
     <p>Tensorflow 라이브러리를 Docker 이미지 작업으로 Kubernetes를 통해 경험해보았습니다.</p>
     <a class="project-link" target="_blank" href="https://github.com/havving/DeepLearning">Check it out</a>
@@ -101,7 +103,7 @@
 
 <div class="user-projects">
   <div class="images-right">
-    <img alt="db" src="{{ "/assets/img/db.png" | prepend: site.baseurl }}" height="560" />
+    <img alt="db" src="{{ "/assets/img/db.png" | prepend: site.baseurl }}" width="500" />
   </div>
   <div class="contents">
     <h3> DoubleFresh: 샐러드 픽업 예약 시스템 개발 (개인 프로젝트) </h3>
