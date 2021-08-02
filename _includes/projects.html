@@ -3,7 +3,7 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="monitor" src="{{ "/assets/img/monitor.png" | prepend: site.baseurl }}" />
+    <img alt="monitor" src="{{ "/assets/img/monitoring.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents">
     <h3> 통합 모니터링 시스템 개발 </h3>
@@ -12,13 +12,12 @@
       <li> dev. 2017.05 ~ 2019.07 </li>
       <li> service. SK HYNIX, LG Display </li>
     </ul>
-    <p>TIBCO Rendezvous 자체 및 Rendezvous를 사용하는 시스템을 모니터링하여 시스템에서 발생 가능성이 존재하는 장애들을 사전에 예방하는 솔루션입니다.
+    <p>TIBCO Rendezvous 자체 및 Rendezvous를 사용하는 시스템을 모니터링하여 시스템에서 발생 가능성이 존재하는 장애들을 사전에 예방하는 시스템입니다.
     TIBCO Rendezvous 통신을 통해 발생한 Queue 및 각 FAB, HOST, APP, PROCESS 정보를 실시간 또는 특정 이력에 대해 모니터링할 수 있습니다.
     미들웨어(RVD) 환경에서 각종 상태 및 데이터를 실시간으로 감지·분석하며, 직관적인 모니터링 UI를 제공합니다.</p>
     <p>서버와 프로세스 자원을 수집하여 모니터링 서버로 전송하고, Application의 Alive, Active/Standby, Deadlock 상태를 실시간으로 감지하는
-    Agent 서버 모듈을 개발 하였습니다. 추후 Front-end 개발 작업에도 서포트로 참여하였습니다.</p>    
+    Agent 서버 모듈을 개발 하였습니다. </p>    
     <p>위 프로젝트는 설계(DB, Architecture)부터 배포(Linux Packaing) 단계까지 모두 참여하였습니다.</p>
-    <!--<a class="project-link" href="#">Check it out</a>-->
   </div>
 </div>
 
@@ -33,10 +32,9 @@
       <li> dev. 2016.12 ~ 2017.04 </li>
       <li> service. SK HYNIX, LG Display </li>
     </ul>
-    <p>실시간 통합 로그를 수집하고 검색과 간편한 백업 로그 보관을 지원하는 솔루션입니다.
-       로그 관리를 쉽게 하여 오류 발생 시 빠른 로그 정보를 분석할 수 있도록 합니다.</p>
-    <p>TIBCO Rendezvous 통신을 통해 전달받은 대용량 로그 데이터를 ElasticSearch에 저장하는 기술 및 ElasticSearch 관련 장애 발생 대응에 서포트로 참여하였습니다.</p>
-    <!--<a class="project-link" href="#">Check it out</a>-->
+    <p>TIBCO Rendezvous 미들웨어로 통신하며 주고받은 메시지들의 로그 정보를 실시간으로 수집하고 검색과 분석 기능을 제공하는 시스템입니다.
+    대용량 데이터인 로그 관리를 쉽게 관리하도록 지원하고 오류 발생 시 빠르게 분석할 수 있도록 합니다.</p>
+    <p>TIBCO Rendezvous 미들웨어 통신을 통해 전달받은 대용량 로그 데이터를 ElasticSearch 엔진에 저장하는 기술 개발 및 ElasticSearch 관련 장애 발생 대응에 서포트로 참여하였습니다.</p>
   </div>
 </div>
 
@@ -50,12 +48,11 @@
       <li> skills. Python / Tensorflow / Deep-Learning / Kubernetes / Docker  </li>
       <li> dev. 2019.08 ~ 2020.10 </li>
     </ul>
-    <p>AI 딥러닝 학습을 통해 콘크리트 구조물의 미세한 균열을 탐지하는 모델을 제안하고 시스템을 개발하였습니다.
-       균열 이미지에 대한 이미지 프로세싱을 통해 잡음을 제거하고 길이 측정 기능을 개발하였습니다.
-       균열 탐지를 위해 딥러닝 알고리즘 중 AutoEncoder 학습 시, 균열 폭이 가늘게 있는 경우 학습이 제대로 수행되지 않는 현상에 대해 
-       오차함수 가중치를 부여하여 모델 학습이 가능하도록 개선 방안을 제시했습니다.
-        이 기술은 추후 특허 출원 및 논문으로도 작성되었습니다.</p>
-    <p>Tensorflow 라이브러리를 Docker 이미지 작업으로 Kubernetes를 통해 경험해보았습니다.</p>
+    <p>AI 딥러닝 학습을 통해 콘크리트 구조물의 미세한 균열을 탐지합니다.
+        먼저 균열 이미지에 대한 이미지 프로세싱을 통해 잡음을 제거하고 균열 여부를 판단한 후, 딥러닝 특징 추출 모델을 통해 학습하고 분석하여 균열을 추출합니다.</p>
+    <p>균열 탐지를 위해 딥러닝 알고리즘 중 AutoEncoder 학습 시, 균열 폭이 가늘게 있는 경우(2~3px 이하) 학습이 제대로 수행되지 않는 현상에 대해 
+       오차함수 가중치를 부여하여 모델 학습이 가능하도록 하는 개선 방안을 제시했습니다.이 연구는 추후 특허 출원 및 논문으로도 작성되었습니다.</p>
+    <p>네이버 클라우드 플랫폼의 가상 GPU 병렬 컴퓨팅을 통해 동시에 고성능의 연산 처리를 진행했습니다. 또한 Kubernetes를 통해 개발에 필요한 기능들(Tensorflow, Jupyter Notebook 등)을 Docker로 작업하여 운영했습니다.</p>
     <a class="project-link" target="_blank" href="https://github.com/havving/DeepLearning">Check it out</a>
   </div>
 </div>
@@ -74,11 +71,9 @@
       <li> skills. Java </li>
       <li> dev. 2017.06 ~ 2017.09 </li>
     </ul>
-    <p>Java Reflection을 사용하여 D/I를 통한 객체 생성 및 관리 기능을 자동화하여 개발자가 비즈니스 로직 개발에 집중할수 있도록 해줍니다.
-    주요 기능들을 모듈화화여 필요한 기능만을 붙여 프로세스를 쉽게 구성하도록 해줍니다.
-    핵심 데이터의 클러스터 업로드를 통해 Web 혹은 CLI를 통해 확인 가능합니다.
-    REST 방식으로 실시간으로 설정을 업데이트하며, 원격지에서 프로세스를 다운시킬 수 있습니다.</p>
-    <p></p>
+    <p>Java Reflection을 사용하여 D/I를 통한 객체 생성 및 관리 기능을 자동화하여 개발자가 비즈니스 로직 개발에 집중할수 있도록 해줍니다. 주요 기능들을 모듈화화여 필요한 기능만을 붙여 프로세스를 쉽게 구성할 수 있습니다. 심플한 XML설정과 Annotation based 프로그래밍으로 빠른 개발을 지원합니다.
+    </p>
+    <p>프로세스간 데이터를 공유할 수 있는 Cluster 모듈과 RV Connection을 생성하고 관리하는 RV 모듈 개발에 참여했습니다.</p>
     <a class="project-link" target="_blank" href="https://github.com/havving/NodeBuilder">Check it out</a>
   </div>
 </div>
@@ -93,10 +88,9 @@
       <li> skills. Java / ElasticSearch 5.6.0 / Oracle, MySQL </li>
       <li> dev. 2017.02 ~ 2017.04 </li>
     </ul>
-    <p>Sigar 라이브러리와 Java를 통해 시스템에 대한 모니터링 정보(CPU, Memory, Disk, Network, Process)를 수집합니다.
-    특정 호스트에 대한 모니터링 정보를 수집할 수 있고, ElasticSearch 엔진 또는 데이터베이스에 수집한 데이터를 저장합니다.
-    또는 특정 웹 페이지에 수집한 데이터를 Json 형태로 전달할 수도 있습니다.</p>
-    <p>데이터 수집 기능 및 데이터베이스와 ElasticSearch에 데이터를 저장하는 개발 부분에 참여하였습니다.</p>
+    <p>Sigar 라이브러리와 Java를 통해 특정 호스트에 대한 모니터링 정보(CPU, Memory, Disk, Network, Process)를 수집합니다.
+    ElasticSearch 엔진에는 데이터 별로 index를 생성하여 데이터를 저장하거나 데이터베이스(RDBMS)에는 hibernate를 설정하여 저장합니다. 또는 특정 웹 페이지에 JSON 형태로 수집한 데이터 REST방식으로 전달하여 저장합니다. 또는 특정 웹 페이지에 수집한 데이터를 Json 형태로 전달할 수도 있습니다. 크론 표현식을 설정하면 주기적으로 스케줄링하며 시스템 모니터링 자원을 수집할 수 있습니다.</p>
+    <p>모니터링 자원 수집 기능 개발 및 데이터베이스와 ElasticSearch에 데이터를 저장하는 기술 개발에 참여하였습니다.</p>
     <a class="project-link" target="_blank" href="https://github.com/havving/SysCollector">Check it out</a>
   </div>
 </div>
