@@ -12,12 +12,10 @@
       <li> dev. 2017.05 ~ 2019.07 </li>
       <li> service. SK HYNIX, LG Display </li>
     </ul>
-    <p>TIBCO Rendezvous 자체 및 Rendezvous를 사용하는 시스템을 모니터링하여 시스템에서 발생 가능성이 존재하는 장애들을 사전에 예방하는 시스템입니다.
-    TIBCO Rendezvous 통신을 통해 발생한 Queue 및 각 FAB, HOST, APP, PROCESS 정보를 실시간 또는 특정 이력에 대해 모니터링할 수 있습니다.
-    미들웨어(RVD) 환경에서 각종 상태 및 데이터를 실시간으로 감지·분석하며, 직관적인 모니터링 UI를 제공합니다.</p>
-    <p>서버와 프로세스 자원을 수집하여 모니터링 서버로 전송하고, Application의 Alive, Active/Standby, Deadlock 상태를 실시간으로 감지하는
-    Agent 서버 모듈을 개발 하였습니다. </p>    
-    <p>위 프로젝트는 설계(DB, Architecture)부터 배포(Linux Packaing) 단계까지 모두 참여하였습니다.</p>
+    <p>TIBCO Rendezvous 자체 및 Rendezvous를 사용하는 시스템을 모니터링하여 발생 가능성이 존재하는 장애들을 사전에 예방하는 시스템입니다.
+    RV 통신을 통해 발생한 Queue 및 각 FAB, HOST, APP, PROCESS 정보를 실시간으로 감지하고 분석하며 특정 이력에 대해 모니터링할 수 있습니다.</p>
+    <p>서버와 프로세스 자원을 수집하여 모니터링 서버로 전송하고, Application의 상태를 실시간으로 감지하는 Agent 서버 모듈 및 특정 호스트에 대한 RV 메시지 건수와 상태, 로그를 분석할 수 있는 RV 서버 모듈 개발에 참여했습니다. </p>    
+    <p>본 프로젝트는 설계(DB, Architecture)부터 개발, 테스트, 배포(Packaing), 운영 전 프로세스에 모두 참여했습니다.</p>
   </div>
 </div>
 
@@ -34,7 +32,7 @@
     </ul>
     <p>TIBCO Rendezvous 미들웨어로 통신하며 주고받은 메시지들의 로그 정보를 실시간으로 수집하고 검색과 분석 기능을 제공하는 시스템입니다.
     대용량 데이터인 로그 관리를 쉽게 관리하도록 지원하고 오류 발생 시 빠르게 분석할 수 있도록 합니다.</p>
-    <p>TIBCO Rendezvous 미들웨어 통신을 통해 전달받은 대용량 로그 데이터를 ElasticSearch 엔진에 저장하는 기술 개발 및 ElasticSearch 관련 장애 발생 대응에 서포트로 참여하였습니다.</p>
+    <p>RV 미들웨어 통신을 통해 전달받은 대용량 로그 데이터를 ElasticSearch 엔진에 저장하는 기술 및 ElasticSearch 관련 장애 발생 대응에 서포트로 참여했습니다.</p>
   </div>
 </div>
 
@@ -49,10 +47,9 @@
       <li> dev. 2019.08 ~ 2020.10 </li>
     </ul>
     <p>AI 딥러닝 학습을 통해 콘크리트 구조물의 미세한 균열을 탐지합니다.
-        먼저 균열 이미지에 대한 이미지 프로세싱을 통해 잡음을 제거하고 균열 여부를 판단한 후, 딥러닝 특징 추출 모델을 통해 학습하고 분석하여 균열을 추출합니다.</p>
-    <p>균열 탐지를 위해 딥러닝 알고리즘 중 AutoEncoder 학습 시, 균열 폭이 가늘게 있는 경우(2~3px 이하) 학습이 제대로 수행되지 않는 현상에 대해 
-       오차함수 가중치를 부여하여 모델 학습이 가능하도록 하는 개선 방안을 제시했습니다.이 연구는 추후 특허 출원 및 논문으로도 작성되었습니다.</p>
-    <p>네이버 클라우드 플랫폼의 가상 GPU 병렬 컴퓨팅을 통해 동시에 고성능의 연산 처리를 진행했습니다. 또한 Kubernetes를 통해 개발에 필요한 기능들(Tensorflow, Jupyter Notebook 등)을 Docker로 작업하여 운영했습니다.</p>
+    먼저 균열 이미지에 대한 이미지 프로세싱을 통해 잡음을 제거하고, 딥러닝 기법 중 CNN(Convolution Nerual Network, 합성곱신경망)을 사용해 데이터 특징들의 패턴을 파악하여 균열 여부를 판단합니다. 그 후, U-Net, DeepLab V3 등의 Semantic Segmentation 특징 추출 모델을 통해 학습하고 분석하여 균열을 추출합니다.</p>
+    <p>학습 모델 개발 중, 균열 폭이 가늘게 있는 경우(2~3px 이하) 학습이 제대로 수행되지 않는 현상에 대해 오차함수에 가중치를 부여하여 모델 학습이 가능하도록 하는 연구를 진행했습니다. 연구 결과, 정확도 99% 이상, 조화평균 89~92%의 신뢰성 높은 수치를 기록하며 미세 균열에도 학습을 성공적으로 해내어 추후 특허 출원 및 논문으로도 작성되었습니다.</p>
+    <p>네이버 클라우드 플랫폼의 클라우드 서비스 중 하나인 가상 GPU 병렬 컴퓨팅을 이용하여 동시에 여러 대의 서버에서 고성능의 연산 처리를 진행했습니다. 또한 Kubernetes를 통해 개발에 필요한 기능들(Tensorflow, Jupyter Notebook 등)을 Docker로 작업하며 운영하기도 했습니다.</p>
     <a class="project-link" target="_blank" href="https://github.com/havving/DeepLearning">Check it out</a>
   </div>
 </div>
@@ -73,7 +70,7 @@
     </ul>
     <p>Java Reflection을 사용하여 D/I를 통한 객체 생성 및 관리 기능을 자동화하여 개발자가 비즈니스 로직 개발에 집중할수 있도록 해줍니다. 주요 기능들을 모듈화화여 필요한 기능만을 붙여 프로세스를 쉽게 구성할 수 있습니다. 심플한 XML설정과 Annotation based 프로그래밍으로 빠른 개발을 지원합니다.
     </p>
-    <p>프로세스간 데이터를 공유할 수 있는 Cluster 모듈과 RV Connection을 생성하고 관리하는 RV 모듈 개발에 참여했습니다.</p>
+    <p>프로세스간 데이터를 공유할 수 있는 Cluster 모듈과 TIBCO RV Connection 생성 및 메시지 송/수신 관련 기능을 제공하고 관리하는 RV 모듈 개발에 참여했습니다.</p>
     <a class="project-link" target="_blank" href="https://github.com/havving/NodeBuilder">Check it out</a>
   </div>
 </div>
@@ -89,8 +86,8 @@
       <li> dev. 2017.02 ~ 2017.04 </li>
     </ul>
     <p>Sigar 라이브러리와 Java를 통해 특정 호스트에 대한 모니터링 정보(CPU, Memory, Disk, Network, Process)를 수집합니다.
-    ElasticSearch 엔진에는 데이터 별로 index를 생성하여 데이터를 저장하거나 데이터베이스(RDBMS)에는 hibernate를 설정하여 저장합니다. 또는 특정 웹 페이지에 JSON 형태로 수집한 데이터 REST방식으로 전달하여 저장합니다. 또는 특정 웹 페이지에 수집한 데이터를 Json 형태로 전달할 수도 있습니다. 크론 표현식을 설정하면 주기적으로 스케줄링하며 시스템 모니터링 자원을 수집할 수 있습니다.</p>
-    <p>모니터링 자원 수집 기능 개발 및 데이터베이스와 ElasticSearch에 데이터를 저장하는 기술 개발에 참여하였습니다.</p>
+    ElasticSearch 엔진에는 데이터 별로 index를 생성하여 데이터를 저장하거나 데이터베이스(RDBMS)에는 hibernate를 설정하여 저장합니다. 또는 특정 웹 페이지에 JSON 형태로 수집한 데이터 REST방식으로 전달하여 저장할 수도 있습니다. 크론 표현식을 설정하면 주기적으로 스케줄링하며 시스템 모니터링 정보를 수집할 수 있습니다.</p>
+    <p>모니터링 정보 수집 기능 및 데이터베이스와 ElasticSearch 엔진에 수집한 데이터를 저장하는 기술 개발에 참여했습니다.</p>
     <a class="project-link" target="_blank" href="https://github.com/havving/SysCollector">Check it out</a>
   </div>
 </div>
@@ -105,9 +102,8 @@
       <li> skills. Node.js / Flutter / MySQL </li>
       <li> dev. 2021.05 ~ 2021.07 </li>
     </ul>
-    <p>사용자가 정기 구독한 샐러드 가게에서 모바일을 통해 픽업 예약을 하고, 관리자는 모바일로 예약 현황을 확인하고 사용자 관리를 할 수 있는 Web Application입니다. 기본적인 예약 등록·변경·취소 기능과 함께 사용자의 전체적인 픽업 현황을 확인할 수 있습니다. 또한 관리자는 전체 사용자들의 픽업 예약 날짜 및 시간 등을 확인하고 사용자를 새로 추가하거나 변경 사항을 적용하는 등 사용자들에 대한 구독 권한을 가지고 관리를 할 수 있습니다.</p>
-    <p>자주 이용하는 가게에서 매번 전화나 메신저로 픽업 예약을 해야하는 번거로움에서 아이디어를 착안하였습니다.
-    Node.js와 Flutter는 이번 기회를 통해 처음 접해보고 공부하면서 프로젝트에 적용해 지식과 경험치를 얻을 수 있었습니다.</p>
+    <p>사용자가 정기 구독한 샐러드 가게에서 모바일을 통해 픽업 예약을 하고, 관리자는 모바일로 예약 현황을 확인하고 사용자 관리를 할 수 있는 Web Application입니다. 기본적인 예약 등록·변경·취소 기능과 함께 사용자의 전체적인 픽업 현황을 확인할 수 있습니다. 또한 관리자는 전체 사용자들의 픽업 예약 날짜 및 시간 등을 확인하고 사용자를 새로 추가하거나 변경 사항을 적용하는 등 사용자들에 대한 구독 권한을 가지고 관리를 할 수 있습니다. 이는 자주 이용하는 가게에서 매번 전화나 메신저로 픽업 예약을 해야하는 번거로움에서 아이디어를 착안하였습니다.</p>
+    <p> Front-End에는 Flutter를, Back-End에는 Node.js를 본 프로젝트를 통해 처음 접하게 되면서, 학습과 동시에 실제로 적용해보며 지식과 경험치를 얻을 수 있었습니다.</p>
     <a class="project-link" target="_blank" href="https://github.com/havving/DoubleFresh_flutter">Check it out</a>
   </div>
 </div>
